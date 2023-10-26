@@ -1,0 +1,30 @@
+.quote-box-buttons {
+  display: flex;
+  gap: 0.5rem;
+  position: relative;
+
+  .share-button {
+    $button-width: 2.5rem;
+
+    display: flex;
+    width: $button-width;
+    height: $button-width;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.25rem;
+    color: hsl(0, 0%, 100%);
+    transition: 0.75s;
+
+    &:hover,
+    &:active {
+      filter: brightness(1.2);
+    }
+  }
+
+  #new-quote {
+    height: 100%;
+    position: absolute;
+    right: 0rem;
+    color: hsl(0, 0%, 100%);
+  }
+}
